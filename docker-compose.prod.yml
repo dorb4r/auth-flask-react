@@ -16,8 +16,6 @@ services:
       - SECRET_KEY=my_precious
     depends_on:
       - users-db
-    links:
-      - users-db
 
   users-db:
     build:
